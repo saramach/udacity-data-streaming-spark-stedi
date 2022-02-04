@@ -2,8 +2,8 @@
 ## Project Overview
 You work for the data science team at STEDI, a small startup focused on assessing balance for seniors. STEDI has an application that collects data from seniors during a small exercise. The user logs in and then selects the customer they are working with. Then the user starts a timer and clicks a button with each step the senior takes. When the senior has reached 30 steps, their test is finished. The data transmitted enables the application to monitor seniors’ balance risk.
 
-Image of the Stedi application discussed above
-STEDI Application
+<img width="520" alt="Screen Shot 2022-02-04 at 10 56 51 AM" src="https://user-images.githubusercontent.com/16109696/152586968-8a494796-2e60-474a-9387-60b888223577.png">
+
 
 ## A New Product Feature
 Your product manager has requested a graph that shows fall risk (will they fall and become injured?) for recent assessments. The development team has built a graph, which is ready to receive risk information from Kafka:
@@ -22,3 +22,4 @@ The application development team has programmed certain business events to be pu
 ```
 
 The application development team was not able to complete the feature as the graph is currently not receiving any data. Because the graph is currently not receiving any data, you need to generate a new payload in a Kafka topic and make it available to the STEDI application to consume.
+
