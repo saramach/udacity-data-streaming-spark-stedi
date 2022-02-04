@@ -1,0 +1,2022 @@
+****** Config File Path: /home/workspace/stedi-application/application.conf
+****** Config File Path: /home/workspace/stedi-application/application.conf
+Feb 04, 2022 5:12:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor onReceive
+INFO: Connecting to Kafka Topic: customer-risk
+****** Config File Path: /home/workspace/stedi-application/application.conf
+Unable to create test user due to exception: Username already exists
+[websocket-akka.actor.default-dispatcher-5] INFO org.apache.kafka.clients.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-STEDI-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = STEDI
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+Unable to create customer due to exception: Customer already exists
+[Thread-1] INFO org.eclipse.jetty.util.log - Logging initialized @10142ms
+[Thread-1] INFO spark.webserver.JettySparkServer - == Spark has ignited ...
+[Thread-1] INFO spark.webserver.JettySparkServer - >> Listening on 0.0.0.0:3000
+[Thread-1] INFO org.eclipse.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+[websocket-akka.actor.default-dispatcher-5] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+[websocket-akka.actor.default-dispatcher-5] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+[websocket-akka.actor.default-dispatcher-5] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1643994729784
+[websocket-akka.actor.default-dispatcher-5] INFO org.apache.kafka.clients.consumer.KafkaConsumer - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Subscribed to topic(s): risk-score
+[Thread-1] INFO org.eclipse.jetty.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@27ad6c97{/,null,AVAILABLE}
+[Thread-1] ERROR spark.webserver.JettySparkServer - ignite failed
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:85)
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:326)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:244)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:384)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at spark.webserver.JettySparkServer.ignite(JettySparkServer.java:131)
+	at spark.SparkInstance.lambda$init$0(SparkInstance.java:341)
+	at java.lang.Thread.run(Thread.java:748)
+3c-82fe-512de0cdfd6c=Assignment(partitions=[risk-score-0])}
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Successfully joined group with generation 5
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Notifying assignor about the new Assignment(partitions=[risk-score-0])
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Adding newly assigned partitions: risk-score-0
+[websocket-akka.actor.default-dispatcher-6] INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator - [Consumer clientId=consumer-STEDI-1, groupId=STEDI] Setting offset for partition risk-score-0 to the committed offset FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[33f7efd45eb8:9092 (id: 0 rack: null)], epoch=absent}}
+Feb 04, 2022 5:12:27 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: SimulationActor received StartSimulationMessage to start simulation for: 30 test customers
+Feb 04, 2022 5:12:27 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Creating test customers...
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Customer already exists
+Feb 04, 2022 5:12:29 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Starting infinite loop for test data
+Feb 04, 2022 5:12:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Customer Lyn.Harris@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Customer Craig.Gonzalez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Customer Jane.Gonzalez@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Customer Christina.Fibonnaci@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Customer Larry.Anderson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Customer Edward.Jones@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Customer Suresh.Smith@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Customer Craig.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Customer Ben.Spencer@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Customer Craig.Clayton@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Customer Ben.Huey@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Customer Jane.Anderson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Customer Danny.Clark@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:12:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Customer Travis.Jackson@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Customer Travis.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Customer David.Khatib@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Customer Dan.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Customer Christina.Lincoln@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 1 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:08 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:13:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Customer Lyn.Harris@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Customer Craig.Gonzalez@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Customer Jane.Gonzalez@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Customer Christina.Fibonnaci@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Customer Larry.Anderson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Customer Edward.Jones@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Customer Suresh.Smith@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Customer Craig.Khatib@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Customer Ben.Spencer@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Customer Craig.Clayton@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Customer Ben.Huey@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Customer Jane.Anderson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Customer Danny.Clark@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Customer Travis.Jackson@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Customer Travis.Davis@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Customer David.Khatib@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Customer Dan.Davis@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Customer Christina.Lincoln@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 2 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:47 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:13:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Customer Lyn.Harris@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Customer Craig.Gonzalez@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Customer Jane.Gonzalez@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Customer Christina.Fibonnaci@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Customer Larry.Anderson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:13:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Customer Edward.Jones@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Customer Suresh.Smith@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Customer Craig.Khatib@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Customer Ben.Spencer@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Customer Craig.Clayton@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Customer Ben.Huey@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Customer Jane.Anderson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Customer Danny.Clark@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Customer Travis.Jackson@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Customer Travis.Davis@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Customer David.Khatib@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Customer Dan.Davis@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Customer Christina.Lincoln@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Customer Larry.Davis@test.com has: 3 rapid step tests on file which is less than the required number(4) to calculate fall risk.
+Feb 04, 2022 5:14:25 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:14:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:14:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":11.0,"riskDate":"2022-02-04T17:14:25.669Z"}
+Feb 04, 2022 5:14:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Creating Kafka Producer
+[websocket-akka.actor.default-dispatcher-2] INFO org.apache.kafka.clients.producer.ProducerConfig - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = STEDI
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[websocket-akka.actor.default-dispatcher-2] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka version: 2.6.0
+[websocket-akka.actor.default-dispatcher-2] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka commitId: 62abe01bee039651
+[websocket-akka.actor.default-dispatcher-2] INFO org.apache.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1643994867966
+Feb 04, 2022 5:14:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+[kafka-producer-network-thread | STEDI] INFO org.apache.kafka.clients.Metadata - [Producer clientId=STEDI] Cluster ID: 1Wh4auDmSSeiWpIlGBXqtg
+Feb 04, 2022 5:14:29 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: Device: 1234 is already being monitored.
+Feb 04, 2022 5:14:29 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: Moving interest in Device: 1234  as per latest request.
+Feb 04, 2022 5:14:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:14:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":15.0,"riskDate":"2022-02-04T17:14:27.734Z"}
+Feb 04, 2022 5:14:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:14:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":1.0,"riskDate":"2022-02-04T17:14:29.801Z"}
+Feb 04, 2022 5:14:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:14:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":6.5,"riskDate":"2022-02-04T17:14:31.863Z"}
+Feb 04, 2022 5:14:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:14:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-1.0,"riskDate":"2022-02-04T17:14:33.913Z"}
+Feb 04, 2022 5:14:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:14:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-1.0,"riskDate":"2022-02-04T17:14:35.976Z"}
+Feb 04, 2022 5:14:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:14:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-4.0,"riskDate":"2022-02-04T17:14:38.047Z"}
+Feb 04, 2022 5:14:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:14:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-1.0,"riskDate":"2022-02-04T17:14:40.080Z"}
+Feb 04, 2022 5:14:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:14:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-2.5,"riskDate":"2022-02-04T17:14:42.133Z"}
+Feb 04, 2022 5:14:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:14:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":16.5,"riskDate":"2022-02-04T17:14:44.178Z"}
+Feb 04, 2022 5:14:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:14:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":4.0,"riskDate":"2022-02-04T17:14:46.215Z"}
+Feb 04, 2022 5:14:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:14:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":-12.0,"riskDate":"2022-02-04T17:14:48.267Z"}
+Feb 04, 2022 5:14:50 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:14:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":-4.5,"riskDate":"2022-02-04T17:14:50.320Z"}
+Feb 04, 2022 5:14:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:14:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-5.5,"riskDate":"2022-02-04T17:14:52.392Z"}
+Feb 04, 2022 5:14:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:14:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":30.5,"riskDate":"2022-02-04T17:14:54.427Z"}
+Feb 04, 2022 5:14:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:14:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:14:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":5.5,"riskDate":"2022-02-04T17:14:56.463Z"}
+Feb 04, 2022 5:14:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:00 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: Device: 1234 is already being monitored.
+Feb 04, 2022 5:15:00 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: Moving interest in Device: 1234  as per latest request.
+Feb 04, 2022 5:15:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:15:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":4.0,"riskDate":"2022-02-04T17:14:58.484Z"}
+Feb 04, 2022 5:15:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:15:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":16.5,"riskDate":"2022-02-04T17:15:00.572Z"}
+Feb 04, 2022 5:15:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-1.0,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-1.0,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643994904128
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":15.5,"riskDate":"2022-02-04T17:15:02.608Z"}
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:04 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:15:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":4.0,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:15:06 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":4.0,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643994906076
+Feb 04, 2022 5:15:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:15:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-12.5,"riskDate":"2022-02-04T17:15:04.638Z"}
+Feb 04, 2022 5:15:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:15:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":2.5,"riskDate":"2022-02-04T17:15:06.700Z"}
+Feb 04, 2022 5:15:08 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:15:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":20.0,"riskDate":"2022-02-04T17:15:08.743Z"}
+Feb 04, 2022 5:15:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:15:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":1.5,"riskDate":"2022-02-04T17:15:10.833Z"}
+Feb 04, 2022 5:15:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:15:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-1.5,"riskDate":"2022-02-04T17:15:12.860Z"}
+Feb 04, 2022 5:15:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:15:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-2.5,"riskDate":"2022-02-04T17:15:14.908Z"}
+Feb 04, 2022 5:15:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:15:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-3.5,"riskDate":"2022-02-04T17:15:16.940Z"}
+Feb 04, 2022 5:15:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:15:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-1.5,"riskDate":"2022-02-04T17:15:18.962Z"}
+Feb 04, 2022 5:15:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:15:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-2.5,"riskDate":"2022-02-04T17:15:21.021Z"}
+Feb 04, 2022 5:15:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:15:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":6.0,"riskDate":"2022-02-04T17:15:23.066Z"}
+Feb 04, 2022 5:15:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:15:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-0.5,"riskDate":"2022-02-04T17:15:25.090Z"}
+Feb 04, 2022 5:15:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:15:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":-0.5,"riskDate":"2022-02-04T17:15:27.114Z"}
+Feb 04, 2022 5:15:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":15.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:15:29 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":15.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643994929200
+Feb 04, 2022 5:15:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:15:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":6.5,"riskDate":"2022-02-04T17:15:29.141Z"}
+Feb 04, 2022 5:15:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:15:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":6.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:15:33 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":6.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643994933228
+Feb 04, 2022 5:15:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-28.0,"riskDate":"2022-02-04T17:15:31.188Z"}
+Feb 04, 2022 5:15:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:15:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":5.5,"riskDate":"2022-02-04T17:15:33.286Z"}
+Feb 04, 2022 5:15:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:15:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":-23.0,"riskDate":"2022-02-04T17:15:35.325Z"}
+Feb 04, 2022 5:15:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:15:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":-40.0,"riskDate":"2022-02-04T17:15:37.380Z"}
+Feb 04, 2022 5:15:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-1.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:15:40 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-1.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643994940307
+Feb 04, 2022 5:15:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":11.0,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:15:41 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":11.0,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643994941226
+Feb 04, 2022 5:15:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:15:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":-12.5,"riskDate":"2022-02-04T17:15:39.412Z"}
+Feb 04, 2022 5:15:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-1.0,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:15:42 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-1.0,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643994942188
+Feb 04, 2022 5:15:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:15:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":7.5,"riskDate":"2022-02-04T17:15:02.608Z"}
+Feb 04, 2022 5:15:43 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:15:43 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:15:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-37.5,"riskDate":"2022-02-04T17:15:43.496Z"}
+Feb 04, 2022 5:15:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:15:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":-14.0,"riskDate":"2022-02-04T17:15:45.514Z"}
+Feb 04, 2022 5:15:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:15:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":8.5,"riskDate":"2022-02-04T17:15:47.567Z"}
+Feb 04, 2022 5:15:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:15:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":4.5,"riskDate":"2022-02-04T17:15:49.624Z"}
+Feb 04, 2022 5:15:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:15:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-4.0,"riskDate":"2022-02-04T17:15:51.637Z"}
+Feb 04, 2022 5:15:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":16.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:15:54 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":16.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643994954363
+Feb 04, 2022 5:15:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:15:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-4.5,"riskDate":"2022-02-04T17:15:53.656Z"}
+Feb 04, 2022 5:15:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-4.0,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:15:57 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-4.0,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643994957101
+Feb 04, 2022 5:15:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:15:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-2.0,"riskDate":"2022-02-04T17:15:55.682Z"}
+Feb 04, 2022 5:15:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:15:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:15:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-4.5,"riskDate":"2022-02-04T17:15:57.742Z"}
+Feb 04, 2022 5:15:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:16:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-4.0,"riskDate":"2022-02-04T17:15:59.782Z"}
+Feb 04, 2022 5:16:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:16:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-0.5,"riskDate":"2022-02-04T17:16:01.806Z"}
+Feb 04, 2022 5:16:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:16:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-4.5,"riskDate":"2022-02-04T17:16:03.827Z"}
+Feb 04, 2022 5:16:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:16:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":8.5,"riskDate":"2022-02-04T17:15:27.114Z"}
+Feb 04, 2022 5:16:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:16:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":28.0,"riskDate":"2022-02-04T17:16:07.897Z"}
+Feb 04, 2022 5:16:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":1.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:16:10 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":1.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643994970989
+Feb 04, 2022 5:16:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:16:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643994971479
+Feb 04, 2022 5:16:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:16:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-28.5,"riskDate":"2022-02-04T17:16:09.907Z"}
+Feb 04, 2022 5:16:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:16:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":-16.5,"riskDate":"2022-02-04T17:16:11.940Z"}
+Feb 04, 2022 5:16:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:16:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":-19.5,"riskDate":"2022-02-04T17:16:13.977Z"}
+Feb 04, 2022 5:16:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:16:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":-23.0,"riskDate":"2022-02-04T17:16:16.016Z"}
+Feb 04, 2022 5:16:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:16:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":-35.0,"riskDate":"2022-02-04T17:16:18.084Z"}
+Feb 04, 2022 5:16:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-1.5,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:16:21 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-1.5,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643994981300
+Feb 04, 2022 5:16:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-4.5,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:16:21 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-4.5,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643994981305
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":34.5,"riskDate":"2022-02-04T17:16:20.119Z"}
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-0.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-4.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-0.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643994982835
+Feb 04, 2022 5:16:22 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-4.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643994982836
+Feb 04, 2022 5:16:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:16:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-10.5,"riskDate":"2022-02-04T17:16:22.135Z"}
+Feb 04, 2022 5:16:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":-5.5,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":-28.0,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":-28.5,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":-5.5,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643994986036
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":-28.0,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643994986036
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":-28.5,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643994986036
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":-11.0,"riskDate":"2022-02-04T17:16:24.148Z"}
+Feb 04, 2022 5:16:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:16:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":-24.0,"riskDate":"2022-02-04T17:16:26.188Z"}
+Feb 04, 2022 5:16:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:16:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":6.5,"riskDate":"2022-02-04T17:16:28.236Z"}
+Feb 04, 2022 5:16:30 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:16:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-5.0,"riskDate":"2022-02-04T17:16:30.259Z"}
+Feb 04, 2022 5:16:32 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":16.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:16:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":-12.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:16:33 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":16.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643994993112
+Feb 04, 2022 5:16:33 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":-12.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643994993113
+Feb 04, 2022 5:16:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:16:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-4.0,"riskDate":"2022-02-04T17:16:32.292Z"}
+Feb 04, 2022 5:16:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:16:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-2.0,"riskDate":"2022-02-04T17:16:34.318Z"}
+Feb 04, 2022 5:16:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":-12.0,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":-0.5,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":-12.0,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643994998226
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":8.5,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":-0.5,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643994998227
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":8.5,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643994998229
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-5.0,"riskDate":"2022-02-04T17:16:36.409Z"}
+Feb 04, 2022 5:16:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":2.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":-14.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":2.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995000085
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":-14.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995000086
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-5.5,"riskDate":"2022-02-04T17:16:38.456Z"}
+Feb 04, 2022 5:16:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":1.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":1.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995002059
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":4.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":4.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995002072
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-9.5,"riskDate":"2022-02-04T17:16:40.515Z"}
+Feb 04, 2022 5:16:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:16:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":6.5,"riskDate":"2022-02-04T17:16:42.563Z"}
+Feb 04, 2022 5:16:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":32.0,"riskDate":"2022-02-04T17:16:44.585Z"}
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-1.5,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-4.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-1.5,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995006796
+Feb 04, 2022 5:16:46 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-4.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995006796
+Feb 04, 2022 5:16:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":-12.5,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:16:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":-37.5,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:16:47 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":-12.5,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995007573
+Feb 04, 2022 5:16:47 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":-37.5,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995007590
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":15.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-2.5,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":7.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-4.5,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":15.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995008043
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-2.5,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995008043
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":7.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995008043
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-4.5,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995008044
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":30.5,"riskDate":"2022-02-04T17:16:46.607Z"}
+Feb 04, 2022 5:16:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:16:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":11.0,"riskDate":"2022-02-04T17:16:48.661Z"}
+Feb 04, 2022 5:16:50 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:16:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":1.5,"riskDate":"2022-02-04T17:16:50.740Z"}
+Feb 04, 2022 5:16:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:16:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":-5.5,"riskDate":"2022-02-04T17:16:52.781Z"}
+Feb 04, 2022 5:16:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:16:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":17.5,"riskDate":"2022-02-04T17:16:54.801Z"}
+Feb 04, 2022 5:16:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:16:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":4.0,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:16:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":-40.0,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:16:57 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":4.0,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995017291
+Feb 04, 2022 5:16:57 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":-40.0,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995017292
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":6.0,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-0.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":6.0,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995018356
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-0.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995018357
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":-11.0,"riskDate":"2022-02-04T17:16:56.845Z"}
+Feb 04, 2022 5:16:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:17:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":14.5,"riskDate":"2022-02-04T17:16:58.879Z"}
+Feb 04, 2022 5:17:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:00 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-2.0,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995022408
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-2.0,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995022408
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":12.5,"riskDate":"2022-02-04T17:17:00.902Z"}
+Feb 04, 2022 5:17:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:17:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":-19.5,"riskDate":"2022-02-04T17:17:02.934Z"}
+Feb 04, 2022 5:17:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:17:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":-30.0,"riskDate":"2022-02-04T17:17:04.953Z"}
+Feb 04, 2022 5:17:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:17:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":-28.5,"riskDate":"2022-02-04T17:17:06.999Z"}
+Feb 04, 2022 5:17:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":30.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:17:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":5.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:17:10 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":30.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995030472
+Feb 04, 2022 5:17:10 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":5.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995030472
+Feb 04, 2022 5:17:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:17:11 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-5.0,"riskDate":"2022-02-04T17:17:09.014Z"}
+Feb 04, 2022 5:17:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:17:13 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-3.5,"riskDate":"2022-02-04T17:17:11.058Z"}
+Feb 04, 2022 5:17:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":-4.5,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":6.5,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":28.0,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":-4.5,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995034016
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":6.5,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995034016
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":28.0,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995034016
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":5.5,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":-23.0,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":5.5,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995034977
+Feb 04, 2022 5:17:14 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":-23.0,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995034977
+Feb 04, 2022 5:17:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:17:15 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-3.5,"riskDate":"2022-02-04T17:17:13.087Z"}
+Feb 04, 2022 5:17:15 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":20.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":8.5,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":20.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995036397
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":8.5,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995036399
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-4.0,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643995036884
+Feb 04, 2022 5:17:16 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-4.0,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643995036885
+Feb 04, 2022 5:17:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:17:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-2.5,"riskDate":"2022-02-04T17:17:15.100Z"}
+Feb 04, 2022 5:17:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:17:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-5.0,"riskDate":"2022-02-04T17:17:17.123Z"}
+Feb 04, 2022 5:17:19 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:17:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-13.0,"riskDate":"2022-02-04T17:17:19.196Z"}
+Feb 04, 2022 5:17:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:17:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-11.5,"riskDate":"2022-02-04T17:17:21.244Z"}
+Feb 04, 2022 5:17:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:17:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":6.0,"riskDate":"2022-02-04T17:17:23.284Z"}
+Feb 04, 2022 5:17:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:17:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":1.5,"riskDate":"2022-02-04T17:17:25.301Z"}
+Feb 04, 2022 5:17:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-5.0,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:17:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-5.0,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643995048355
+Feb 04, 2022 5:17:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-2.5,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:17:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-2.5,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643995048362
+Feb 04, 2022 5:17:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:17:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":22.0,"riskDate":"2022-02-04T17:16:48.661Z"}
+Feb 04, 2022 5:17:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":6.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:17:29 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":6.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643995049831
+Feb 04, 2022 5:17:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:17:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":0.5,"riskDate":"2022-02-04T17:17:29.351Z"}
+Feb 04, 2022 5:17:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:17:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":6.5,"riskDate":"2022-02-04T17:17:31.376Z"}
+Feb 04, 2022 5:17:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":11.0,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:17:34 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":11.0,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643995054211
+Feb 04, 2022 5:17:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:17:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":13.5,"riskDate":"2022-02-04T17:17:33.442Z"}
+Feb 04, 2022 5:17:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:17:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":11.0,"riskDate":"2022-02-04T17:17:35.458Z"}
+Feb 04, 2022 5:17:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-6.0,"riskDate":"2022-02-04T17:17:37.494Z"}
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":-35.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":-11.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":-35.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643995059850
+Feb 04, 2022 5:17:39 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":-11.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643995059850
+Feb 04, 2022 5:17:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:17:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-10.0,"riskDate":"2022-02-04T17:17:39.533Z"}
+Feb 04, 2022 5:17:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:17:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":6.5,"riskDate":"2022-02-04T17:17:41.577Z"}
+Feb 04, 2022 5:17:43 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":32.0,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:17:45 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":32.0,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643995065265
+Feb 04, 2022 5:17:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:17:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":11.0,"riskDate":"2022-02-04T17:17:43.598Z"}
+Feb 04, 2022 5:17:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":-11.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":-11.0,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995067102
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":-19.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":-19.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995067112
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":-33.0,"riskDate":"2022-02-04T17:17:45.613Z"}
+Feb 04, 2022 5:17:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-4.0,"riskDate":"2022-02-04T17:17:47.629Z"}
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":6.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":6.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995069940
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":-28.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:17:49 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":-28.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995069943
+Feb 04, 2022 5:17:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:17:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-4.0,"riskDate":"2022-02-04T17:17:49.662Z"}
+Feb 04, 2022 5:17:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:17:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-3.5,"riskDate":"2022-02-04T17:17:51.717Z"}
+Feb 04, 2022 5:17:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-5.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:17:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-5.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:17:54 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-5.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995074916
+Feb 04, 2022 5:17:54 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-5.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995074917
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":-10.5,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":12.5,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":-10.5,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995075440
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":12.5,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995075440
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-1.0,"riskDate":"2022-02-04T17:17:53.774Z"}
+Feb 04, 2022 5:17:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":34.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-4.0,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":14.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-3.5,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":34.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995076143
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-4.0,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995076144
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":14.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995076144
+Feb 04, 2022 5:17:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-3.5,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995076144
+Feb 04, 2022 5:17:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:17:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-2.5,"riskDate":"2022-02-04T17:17:55.795Z"}
+Feb 04, 2022 5:17:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:17:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:17:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-12.5,"riskDate":"2022-02-04T17:17:57.832Z"}
+Feb 04, 2022 5:17:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:18:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-32.5,"riskDate":"2022-02-04T17:17:59.859Z"}
+Feb 04, 2022 5:18:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:18:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":-14.5,"riskDate":"2022-02-04T17:18:01.903Z"}
+Feb 04, 2022 5:18:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:18:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":-11.5,"riskDate":"2022-02-04T17:18:03.923Z"}
+Feb 04, 2022 5:18:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":-23.0,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:18:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":17.5,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:18:06 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":-23.0,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995086096
+Feb 04, 2022 5:18:06 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":17.5,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995086096
+Feb 04, 2022 5:18:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-9.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:18:07 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-9.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995087141
+Feb 04, 2022 5:18:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:18:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":21.5,"riskDate":"2022-02-04T17:18:05.960Z"}
+Feb 04, 2022 5:18:08 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-2.0,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:18:09 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-2.0,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995089841
+Feb 04, 2022 5:18:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:18:09 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995089845
+Feb 04, 2022 5:18:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:18:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":-6.5,"riskDate":"2022-02-04T17:18:08.012Z"}
+Feb 04, 2022 5:18:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:18:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":6.0,"riskDate":"2022-02-04T17:18:10.036Z"}
+Feb 04, 2022 5:18:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:18:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":-14.0,"riskDate":"2022-02-04T17:18:12.092Z"}
+Feb 04, 2022 5:18:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:18:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":9.0,"riskDate":"2022-02-04T17:18:14.121Z"}
+Feb 04, 2022 5:18:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":-16.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:18:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":1.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:18:17 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":-16.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995097792
+Feb 04, 2022 5:18:17 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":1.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995097792
+Feb 04, 2022 5:18:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:18:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":1.5,"riskDate":"2022-02-04T17:18:16.144Z"}
+Feb 04, 2022 5:18:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:18 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:18:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:18:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-17.0,"riskDate":"2022-02-04T17:18:18.168Z"}
+Feb 04, 2022 5:18:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:18:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":20.5,"riskDate":"2022-02-04T17:18:20.190Z"}
+Feb 04, 2022 5:18:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":30.5,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:18:23 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":30.5,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995103167
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":35.5,"riskDate":"2022-02-04T17:18:22.224Z"}
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":-19.5,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":-5.5,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":-19.5,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995104481
+Feb 04, 2022 5:18:24 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":-5.5,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995104482
+Feb 04, 2022 5:18:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":-24.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:18:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":-30.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:18:25 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":-24.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995105776
+Feb 04, 2022 5:18:25 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":-30.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995105776
+Feb 04, 2022 5:18:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-5.5,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:18:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-5.5,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643995106137
+Feb 04, 2022 5:18:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:18:26 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":16.5,"riskDate":"2022-02-04T17:18:24.252Z"}
+Feb 04, 2022 5:18:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:18:28 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-3.0,"riskDate":"2022-02-04T17:18:26.271Z"}
+Feb 04, 2022 5:18:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:18:30 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-2.5,"riskDate":"2022-02-04T17:18:28.317Z"}
+Feb 04, 2022 5:18:30 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:18:32 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-3.5,"riskDate":"2022-02-04T17:18:30.343Z"}
+Feb 04, 2022 5:18:32 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:18:34 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-2.0,"riskDate":"2022-02-04T17:18:32.364Z"}
+Feb 04, 2022 5:18:34 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-1.0,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:18:36 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-1.0,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643995116036
+Feb 04, 2022 5:18:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:18:36 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-1.0,"riskDate":"2022-02-04T17:18:34.374Z"}
+Feb 04, 2022 5:18:36 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-11.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:18:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-32.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:18:37 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-11.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643995117195
+Feb 04, 2022 5:18:37 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-32.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643995117195
+Feb 04, 2022 5:18:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:18:38 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-10.5,"riskDate":"2022-02-04T17:18:36.422Z"}
+Feb 04, 2022 5:18:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-21.5,"riskDate":"2022-02-04T17:18:38.450Z"}
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":22.0,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":21.5,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":22.0,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643995120764
+Feb 04, 2022 5:18:40 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":21.5,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643995120764
+Feb 04, 2022 5:18:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:18:42 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":-24.5,"riskDate":"2022-02-04T17:18:40.467Z"}
+Feb 04, 2022 5:18:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:18:44 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":-24.0,"riskDate":"2022-02-04T17:18:42.498Z"}
+Feb 04, 2022 5:18:44 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-8.5,"riskDate":"2022-02-04T17:18:44.542Z"}
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":11.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":9.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":11.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643995126815
+Feb 04, 2022 5:18:46 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":9.0,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643995126815
+Feb 04, 2022 5:18:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:18:48 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":-25.0,"riskDate":"2022-02-04T17:18:46.582Z"}
+Feb 04, 2022 5:18:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:18:50 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":13.0,"riskDate":"2022-02-04T17:18:48.598Z"}
+Feb 04, 2022 5:18:50 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":6.0,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":-14.5,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":6.0,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643995132207
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":-14.5,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643995132207
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":-1.0,"riskDate":"2022-02-04T17:18:50.624Z"}
+Feb 04, 2022 5:18:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":6.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:18:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":20.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:18:53 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":6.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995133932
+Feb 04, 2022 5:18:53 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":20.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995133933
+Feb 04, 2022 5:18:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:18:54 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":-6.5,"riskDate":"2022-02-04T17:18:52.663Z"}
+Feb 04, 2022 5:18:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":-33.0,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":16.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":-33.0,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995136178
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":16.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995136179
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-9.5,"riskDate":"2022-02-04T17:18:54.696Z"}
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:18:56 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:18:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:18:58 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":10.0,"riskDate":"2022-02-04T17:18:56.737Z"}
+Feb 04, 2022 5:18:58 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-4.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:19:00 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-4.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995140714
+Feb 04, 2022 5:19:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:19:00 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":-9.5,"riskDate":"2022-02-04T17:18:58.782Z"}
+Feb 04, 2022 5:19:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":-10.0,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:19:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":-17.0,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:19:01 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":-10.0,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995141591
+Feb 04, 2022 5:19:01 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":-17.0,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995141592
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":-6.0,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-4.0,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":1.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":-6.0,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995142268
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-4.0,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995142269
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":1.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995142269
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":14.5,"riskDate":"2022-02-04T17:19:00.833Z"}
+Feb 04, 2022 5:19:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:19:04 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":36.5,"riskDate":"2022-02-04T17:19:02.860Z"}
+Feb 04, 2022 5:19:04 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:19:06 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-3.0,"riskDate":"2022-02-04T17:19:04.881Z"}
+Feb 04, 2022 5:19:06 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:19:08 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-1.5,"riskDate":"2022-02-04T17:19:06.908Z"}
+Feb 04, 2022 5:19:08 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:19:10 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-4.5,"riskDate":"2022-02-04T17:19:08.929Z"}
+Feb 04, 2022 5:19:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":13.5,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":-14.0,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":13.5,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995151512
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":-14.0,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995151512
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-13.0,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-12.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-13.0,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995151993
+Feb 04, 2022 5:19:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-12.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995151993
+Feb 04, 2022 5:19:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:19:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-3.0,"riskDate":"2022-02-04T17:19:10.948Z"}
+Feb 04, 2022 5:19:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:19:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-2.0,"riskDate":"2022-02-04T17:19:12.964Z"}
+Feb 04, 2022 5:19:15 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:15 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:19:15 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995155036
+Feb 04, 2022 5:19:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:19:17 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":-22.5,"riskDate":"2022-02-04T17:19:15.005Z"}
+Feb 04, 2022 5:19:17 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:19:19 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":-1.5,"riskDate":"2022-02-04T17:19:17.071Z"}
+Feb 04, 2022 5:19:19 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:19:21 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":-3.0,"riskDate":"2022-02-04T17:19:19.096Z"}
+Feb 04, 2022 5:19:21 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":0.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:19:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":-6.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:19:22 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":0.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995162663
+Feb 04, 2022 5:19:22 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":-6.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995162663
+Feb 04, 2022 5:19:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:19:23 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":-1.0,"riskDate":"2022-02-04T17:19:21.132Z"}
+Feb 04, 2022 5:19:23 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:19:25 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-12.0,"riskDate":"2022-02-04T17:19:23.190Z"}
+Feb 04, 2022 5:19:25 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":1.5,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:19:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":1.5,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995166056
+Feb 04, 2022 5:19:26 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Danny.Clark@test.com","score":-11.5,"email":"Danny.Clark@test.com","birthYear":"1944"}
+Feb 04, 2022 5:19:26 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Danny.Clark@test.com","score":-11.5,"email":"Danny.Clark@test.com","birthYear":"1944"} with timestamp: 1643995166060
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":6.5,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"David.Khatib@test.com","score":6.0,"email":"David.Khatib@test.com","birthYear":"1940"}
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":6.5,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995167125
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"David.Khatib@test.com","score":6.0,"email":"David.Khatib@test.com","birthYear":"1940"} with timestamp: 1643995167125
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":-21.5,"riskDate":"2022-02-04T17:19:25.245Z"}
+Feb 04, 2022 5:19:27 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":11.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Gonzalez@test.com","score":35.5,"email":"Jane.Gonzalez@test.com","birthYear":"1963"}
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":11.0,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995168360
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Gonzalez@test.com","score":35.5,"email":"Jane.Gonzalez@test.com","birthYear":"1963"} with timestamp: 1643995168360
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-5.0,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"}
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-5.0,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643995168889
+Feb 04, 2022 5:19:28 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Spencer@test.com","score":-2.5,"email":"Ben.Spencer@test.com","birthYear":"1950"} with timestamp: 1643995168890
+Feb 04, 2022 5:19:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:19:29 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":2.0,"riskDate":"2022-02-04T17:19:27.271Z"}
+Feb 04, 2022 5:19:29 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:19:31 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":13.5,"riskDate":"2022-02-04T17:18:50.624Z"}
+Feb 04, 2022 5:19:31 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:19:33 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":-3.5,"riskDate":"2022-02-04T17:19:31.374Z"}
+Feb 04, 2022 5:19:33 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:19:35 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-16.5,"riskDate":"2022-02-04T17:19:33.388Z"}
+Feb 04, 2022 5:19:35 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:35 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:19:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:19:37 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":16.5,"riskDate":"2022-02-04T17:19:35.443Z"}
+Feb 04, 2022 5:19:37 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-2.0,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:19:38 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Khatib@test.com","score":-3.0,"email":"Craig.Khatib@test.com","birthYear":"1951"}
+Feb 04, 2022 5:19:38 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-2.0,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643995178676
+Feb 04, 2022 5:19:38 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Khatib@test.com","score":-3.0,"email":"Craig.Khatib@test.com","birthYear":"1951"} with timestamp: 1643995178676
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-21.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Ben.Huey@test.com","score":-1.5,"email":"Ben.Huey@test.com","birthYear":"1948"}
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-21.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643995179455
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Ben.Huey@test.com","score":-1.5,"email":"Ben.Huey@test.com","birthYear":"1948"} with timestamp: 1643995179455
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":-16.5,"riskDate":"2022-02-04T17:19:37.465Z"}
+Feb 04, 2022 5:19:39 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:19:41 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":1.0,"riskDate":"2022-02-04T17:19:39.519Z"}
+Feb 04, 2022 5:19:41 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":-8.5,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:19:42 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Jackson@test.com","score":-12.0,"email":"Travis.Jackson@test.com","birthYear":"1943"}
+Feb 04, 2022 5:19:42 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":-8.5,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643995182706
+Feb 04, 2022 5:19:42 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Jackson@test.com","score":-12.0,"email":"Travis.Jackson@test.com","birthYear":"1943"} with timestamp: 1643995182707
+Feb 04, 2022 5:19:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:19:43 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":-6.5,"riskDate":"2022-02-04T17:19:41.555Z"}
+Feb 04, 2022 5:19:43 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Anderson@test.com
+Feb 04, 2022 5:19:45 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Anderson@test.com {"customer":"Larry.Anderson@test.com","score":-3.0,"riskDate":"2022-02-04T17:19:43.581Z"}
+Feb 04, 2022 5:19:45 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Edward.Jones@test.com
+Feb 04, 2022 5:19:47 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Edward.Jones@test.com {"customer":"Edward.Jones@test.com","score":-3.0,"riskDate":"2022-02-04T17:19:45.595Z"}
+Feb 04, 2022 5:19:47 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:48 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Lincoln@test.com","score":-6.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"}
+Feb 04, 2022 5:19:48 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Lincoln@test.com","score":-6.5,"email":"Christina.Lincoln@test.com","birthYear":"1938"} with timestamp: 1643995188099
+Feb 04, 2022 5:19:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Suresh.Smith@test.com
+Feb 04, 2022 5:19:49 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Suresh.Smith@test.com {"customer":"Suresh.Smith@test.com","score":-4.5,"riskDate":"2022-02-04T17:19:47.623Z"}
+Feb 04, 2022 5:19:49 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Khatib@test.com
+Feb 04, 2022 5:19:51 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Khatib@test.com {"customer":"Craig.Khatib@test.com","score":-2.5,"riskDate":"2022-02-04T17:19:49.676Z"}
+Feb 04, 2022 5:19:51 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":-24.5,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:19:52 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":-24.5,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643995192824
+Feb 04, 2022 5:19:52 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Jane.Anderson@test.com","score":-3.0,"email":"Jane.Anderson@test.com","birthYear":"1947"}
+Feb 04, 2022 5:19:52 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Jane.Anderson@test.com","score":-3.0,"email":"Jane.Anderson@test.com","birthYear":"1947"} with timestamp: 1643995192835
+Feb 04, 2022 5:19:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Spencer@test.com
+Feb 04, 2022 5:19:53 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Spencer@test.com {"customer":"Ben.Spencer@test.com","score":-3.5,"riskDate":"2022-02-04T17:19:51.703Z"}
+Feb 04, 2022 5:19:53 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:54 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Gonzalez@test.com","score":-9.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"}
+Feb 04, 2022 5:19:54 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Gonzalez@test.com","score":-9.5,"email":"Craig.Gonzalez@test.com","birthYear":"1964"} with timestamp: 1643995194573
+Feb 04, 2022 5:19:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Clayton@test.com
+Feb 04, 2022 5:19:55 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Clayton@test.com {"customer":"Craig.Clayton@test.com","score":2.0,"riskDate":"2022-02-04T17:19:53.735Z"}
+Feb 04, 2022 5:19:55 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:56 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Christina.Fibonnaci@test.com","score":36.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"}
+Feb 04, 2022 5:19:56 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Christina.Fibonnaci@test.com","score":36.5,"email":"Christina.Fibonnaci@test.com","birthYear":"1962"} with timestamp: 1643995196874
+Feb 04, 2022 5:19:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Ben.Huey@test.com
+Feb 04, 2022 5:19:57 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Ben.Huey@test.com {"customer":"Ben.Huey@test.com","score":6.0,"riskDate":"2022-02-04T17:19:55.752Z"}
+Feb 04, 2022 5:19:57 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:19:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Anderson@test.com
+Feb 04, 2022 5:19:59 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Anderson@test.com {"customer":"Jane.Anderson@test.com","score":9.5,"riskDate":"2022-02-04T17:19:57.767Z"}
+Feb 04, 2022 5:19:59 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-3.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:20:00 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Anderson@test.com","score":-3.0,"email":"Larry.Anderson@test.com","birthYear":"1958"}
+Feb 04, 2022 5:20:00 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-3.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995200837
+Feb 04, 2022 5:20:00 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Anderson@test.com","score":-3.0,"email":"Larry.Anderson@test.com","birthYear":"1958"} with timestamp: 1643995200837
+Feb 04, 2022 5:20:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Lyn.Harris@test.com","score":10.0,"email":"Lyn.Harris@test.com","birthYear":"1965"}
+Feb 04, 2022 5:20:01 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Lyn.Harris@test.com","score":10.0,"email":"Lyn.Harris@test.com","birthYear":"1965"} with timestamp: 1643995201575
+Feb 04, 2022 5:20:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Danny.Clark@test.com
+Feb 04, 2022 5:20:01 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Danny.Clark@test.com {"customer":"Danny.Clark@test.com","score":20.0,"riskDate":"2022-02-04T17:19:59.808Z"}
+Feb 04, 2022 5:20:01 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-2.5,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Larry.Davis@test.com","score":-9.5,"email":"Larry.Davis@test.com","birthYear":"1937"}
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-2.5,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995202180
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Edward.Jones@test.com","score":-1.5,"email":"Edward.Jones@test.com","birthYear":"1957"}
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Larry.Davis@test.com","score":-9.5,"email":"Larry.Davis@test.com","birthYear":"1937"} with timestamp: 1643995202180
+Feb 04, 2022 5:20:02 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Edward.Jones@test.com","score":-1.5,"email":"Edward.Jones@test.com","birthYear":"1957"} with timestamp: 1643995202181
+Feb 04, 2022 5:20:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Jackson@test.com
+Feb 04, 2022 5:20:03 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Jackson@test.com {"customer":"Travis.Jackson@test.com","score":-5.5,"riskDate":"2022-02-04T17:20:01.829Z"}
+Feb 04, 2022 5:20:03 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Travis.Davis@test.com
+Feb 04, 2022 5:20:05 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Travis.Davis@test.com {"customer":"Travis.Davis@test.com","score":0.0,"riskDate":"2022-02-04T17:20:03.889Z"}
+Feb 04, 2022 5:20:05 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: David.Khatib@test.com
+Feb 04, 2022 5:20:07 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: David.Khatib@test.com {"customer":"David.Khatib@test.com","score":2.5,"riskDate":"2022-02-04T17:20:05.933Z"}
+Feb 04, 2022 5:20:07 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Dan.Davis@test.com
+Feb 04, 2022 5:20:09 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Dan.Davis@test.com {"customer":"Dan.Davis@test.com","score":18.5,"riskDate":"2022-02-04T17:20:07.984Z"}
+Feb 04, 2022 5:20:09 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:10 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Dan.Davis@test.com","score":-1.0,"email":"Dan.Davis@test.com","birthYear":"1939"}
+Feb 04, 2022 5:20:10 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Dan.Davis@test.com","score":-1.0,"email":"Dan.Davis@test.com","birthYear":"1939"} with timestamp: 1643995210113
+Feb 04, 2022 5:20:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-10.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:20:11 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Craig.Clayton@test.com","score":-22.5,"email":"Craig.Clayton@test.com","birthYear":"1949"}
+Feb 04, 2022 5:20:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-10.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995211147
+Feb 04, 2022 5:20:11 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Craig.Clayton@test.com","score":-22.5,"email":"Craig.Clayton@test.com","birthYear":"1949"} with timestamp: 1643995211147
+Feb 04, 2022 5:20:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Lincoln@test.com
+Feb 04, 2022 5:20:12 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Lincoln@test.com {"customer":"Christina.Lincoln@test.com","score":14.5,"riskDate":"2022-02-04T17:20:09.997Z"}
+Feb 04, 2022 5:20:12 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:20:13 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Suresh.Smith@test.com","score":-4.5,"email":"Suresh.Smith@test.com","birthYear":"1952"}
+Feb 04, 2022 5:20:13 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-3.5,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995213719
+Feb 04, 2022 5:20:13 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Suresh.Smith@test.com","score":-4.5,"email":"Suresh.Smith@test.com","birthYear":"1952"} with timestamp: 1643995213720
+Feb 04, 2022 5:20:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Larry.Davis@test.com
+Feb 04, 2022 5:20:14 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Larry.Davis@test.com {"customer":"Larry.Davis@test.com","score":-3.5,"riskDate":"2022-02-04T17:20:12.031Z"}
+Feb 04, 2022 5:20:14 PM com.getsimplex.steptimer.service.SimulationActor onReceive
+INFO: Adding more test data...
+Feb 04, 2022 5:20:14 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Lyn.Harris@test.com
+Feb 04, 2022 5:20:16 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Lyn.Harris@test.com {"customer":"Lyn.Harris@test.com","score":-3.5,"riskDate":"2022-02-04T17:20:14.049Z"}
+Feb 04, 2022 5:20:16 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Craig.Gonzalez@test.com
+Feb 04, 2022 5:20:18 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Craig.Gonzalez@test.com {"customer":"Craig.Gonzalez@test.com","score":12.0,"riskDate":"2022-02-04T17:20:16.095Z"}
+Feb 04, 2022 5:20:18 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Jane.Gonzalez@test.com
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Jane.Gonzalez@test.com {"customer":"Jane.Gonzalez@test.com","score":-13.0,"riskDate":"2022-02-04T17:20:18.145Z"}
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":-25.0,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.KafkaRiskTopicConsumerActor lambda$onReceive$0
+INFO: Received 1 more message from Kafka: {"customer":"Travis.Davis@test.com","score":-21.5,"email":"Travis.Davis@test.com","birthYear":"1941"}
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":-25.0,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995220248
+Feb 04, 2022 5:20:20 PM com.getsimplex.steptimer.service.DeviceRouter onReceive
+INFO: DeviceRouter received payload: {"customer":"Travis.Davis@test.com","score":-21.5,"email":"Travis.Davis@test.com","birthYear":"1941"} with timestamp: 1643995220249
+Feb 04, 2022 5:20:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Received score request for: Christina.Fibonnaci@test.com
+Feb 04, 2022 5:20:22 PM com.getsimplex.steptimer.service.StepHistory riskScore
+INFO: Risk for customer: Christina.Fibonnaci@test.com {"customer":"Christina.Fibonnaci@test.com","score":-11.5,"riskDate":"2022-02-04T17:20:20.173Z"}
+Feb 04, 2022 5:20:22 PM com.getsimplex.steptimer.service.KafkaRiskTopicProducerActor onReceive
+INFO: Sending to Kafka Topic: stedi-events
